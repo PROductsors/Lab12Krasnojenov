@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контактна форма</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+
+  <header class="fixed-header">Фіксоване меню</header>
+
+  <div class="form-container">
+    <form>
+      <label for="name">Ім'я:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <p>Стать:</p>
+      <div class="radio-group">
+        <label>
+          <input type="radio" name="gender" value="male" required> Чоловік
+        </label>
+        <label>
+          <input type="radio" name="gender" value="female"> Жінка
+        </label>
+      </div>
+
+      <div class="checkbox-group">
+        <label>
+          <input type="checkbox" name="agree" required> Погоджуюсь з умовами
+        </label>
+      </div>
+
+      <button type="submit">Відправити</button>
+    </form>
+  </div>
+
+  <footer>Абсолютний футер</footer>
+  
+</body>
+</html>
